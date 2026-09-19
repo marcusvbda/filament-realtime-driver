@@ -1,10 +1,10 @@
 <?php
 
-namespace RecruiterLabs\FilamentRealtimeDriver\Console;
+namespace Marcusvbda\FilamentRealtimeDriver\Console;
 
 use Filament\Facades\Filament;
 use Illuminate\Console\Command;
-use RecruiterLabs\FilamentRealtimeDriver\FilamentRealtimeDriverPlugin;
+use Marcusvbda\FilamentRealtimeDriver\FilamentRealtimeDriverPlugin;
 
 class ListenCommand extends Command
 {

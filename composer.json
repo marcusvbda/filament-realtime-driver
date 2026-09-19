@@ -9,13 +9,13 @@
     },
     "autoload": {
         "psr-4": {
-            "RecruiterLabs\\FilamentRealtimeDriver\\": "src/"
+            "Marcusvbda\\FilamentRealtimeDriver\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "RecruiterLabs\\FilamentRealtimeDriver\\FilamentRealtimeDriverServiceProvider"
+                "Marcusvbda\\FilamentRealtimeDriver\\FilamentRealtimeDriverServiceProvider"
             ]
         }
     },

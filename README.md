@@ -78,7 +78,7 @@ php artisan vendor:publish --tag=filament-realtime-driver-config
 Register the plugin on a panel and call `->socket()`:
 
 ```php
-use RecruiterLabs\FilamentRealtimeDriver\FilamentRealtimeDriverPlugin;
+use Marcusvbda\FilamentRealtimeDriver\FilamentRealtimeDriverPlugin;
 
 public function panel(Panel $panel): Panel
 {
@@ -162,7 +162,7 @@ Behaviour:
 Fire the matching event from wherever the record changes — typically a model event:
 
 ```php
-use RecruiterLabs\FilamentRealtimeDriver\RealtimeEvent;
+use Marcusvbda\FilamentRealtimeDriver\RealtimeEvent;
 
 protected static function booted(): void
 {
@@ -199,7 +199,7 @@ This is a **public channel** either way (no `private-` prefix): it only filters 
 For server-side reactions to realtime events (independent of any browser), configure a callback when calling `->socket()`:
 
 ```php
-use RecruiterLabs\FilamentRealtimeDriver\RealtimeConnection;
+use Marcusvbda\FilamentRealtimeDriver\RealtimeConnection;
 
 ->plugin(
     FilamentRealtimeDriverPlugin::make()->socket(
@@ -272,7 +272,7 @@ The `notifications` table must exist (`php artisan make:notifications-table && p
 Instead of writing a dedicated `Event` class for every notification, dispatch this ready-made one directly with a channel, event name and payload:
 
 ```php
-use RecruiterLabs\FilamentRealtimeDriver\RealtimeEvent;
+use Marcusvbda\FilamentRealtimeDriver\RealtimeEvent;
 
 broadcast(new RealtimeEvent('orders', 'OrderUpdated', ['id' => $order->id]));
 // or

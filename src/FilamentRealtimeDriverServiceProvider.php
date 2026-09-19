@@ -1,12 +1,12 @@
 <?php
 
-namespace RecruiterLabs\FilamentRealtimeDriver;
+namespace Marcusvbda\FilamentRealtimeDriver;
 
 use Filament\Tables\Table;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use RecruiterLabs\FilamentRealtimeDriver\Console\ListenCommand;
-use RecruiterLabs\FilamentRealtimeDriver\Tables\TableSocketRegistry;
+use Marcusvbda\FilamentRealtimeDriver\Console\ListenCommand;
+use Marcusvbda\FilamentRealtimeDriver\Tables\TableSocketRegistry;
 
 class FilamentRealtimeDriverServiceProvider extends ServiceProvider
 {
@@ -19,7 +19,7 @@ class FilamentRealtimeDriverServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'filament-realtime-driver');
 
-        Blade::componentNamespace('RecruiterLabs\\FilamentRealtimeDriver\\View\\Components', 'filament-realtime-driver');
+        Blade::componentNamespace('Marcusvbda\\FilamentRealtimeDriver\\View\\Components', 'filament-realtime-driver');
 
         $this->registerTableSocketMacro();
 

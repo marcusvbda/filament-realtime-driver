@@ -21,7 +21,7 @@
                         return;
                     }
 
-                    this.socket = new WebSocket(@js(\RecruiterLabs\FilamentRealtimeDriver\FilamentRealtimeDriverPlugin::browserSocketUrl()));
+                    this.socket = new WebSocket(@js(\Marcusvbda\FilamentRealtimeDriver\FilamentRealtimeDriverPlugin::browserSocketUrl()));
                     this.socket.addEventListener('message', (raw) => this.__handleMessage(raw));
                     this.socket.addEventListener('close', () => {
                         this.socket = null;

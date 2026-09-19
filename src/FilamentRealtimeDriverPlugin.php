@@ -1,6 +1,6 @@
 <?php
 
-namespace RecruiterLabs\FilamentRealtimeDriver;
+namespace Marcusvbda\FilamentRealtimeDriver;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;

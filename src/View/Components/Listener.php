@@ -1,6 +1,6 @@
 <?php
 
-namespace RecruiterLabs\FilamentRealtimeDriver\View\Components;
+namespace Marcusvbda\FilamentRealtimeDriver\View\Components;
 
 use Illuminate\View\Component;
 use Illuminate\View\View;

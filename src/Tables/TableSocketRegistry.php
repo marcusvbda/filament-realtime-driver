@@ -1,6 +1,6 @@
 <?php
 
-namespace RecruiterLabs\FilamentRealtimeDriver\Tables;
+namespace Marcusvbda\FilamentRealtimeDriver\Tables;
 
 use Filament\Tables\Table;
 use WeakMap;

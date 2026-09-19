@@ -3,7 +3,7 @@
         <script data-navigate-once>
             document.addEventListener('livewire:init', () => {
                 window.FilamentRealtimeDriver.subscribe(
-                    @js('private-' . \RecruiterLabs\FilamentRealtimeDriver\FilamentRealtimeDriverPlugin::currentUserBroadcastChannel()),
+                    @js('private-' . \Marcusvbda\FilamentRealtimeDriver\FilamentRealtimeDriverPlugin::currentUserBroadcastChannel()),
                     'database-notifications.sent',
                     () => window.Livewire.dispatch('databaseNotificationsSent'),
                 );

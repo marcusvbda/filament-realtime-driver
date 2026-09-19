@@ -1,6 +1,6 @@
 <?php
 
-namespace RecruiterLabs\FilamentRealtimeDriver;
+namespace Marcusvbda\FilamentRealtimeDriver;
 
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcastNow;
