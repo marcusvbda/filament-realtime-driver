@@ -1,0 +1,24 @@
+{
+    "name": "marcusvbda/filament-realtime-driver",
+    "description": "Realtime WebSocket driver for Filament using Laravel Reverb, without Laravel Echo or pusher-js.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4.1",
+        "filament/filament": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RecruiterLabs\\FilamentRealtimeDriver\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RecruiterLabs\\FilamentRealtimeDriver\\FilamentRealtimeDriverServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
