@@ -43,13 +43,13 @@ Not published to Packagist yet — install as a local path package. In your app'
         { "type": "path", "url": "packages/filament-realtime-driver" }
     ],
     "require": {
-        "recruiter-labs/filament-realtime-driver": "*"
+        "Marcusvbda/filament-realtime-driver": "*"
     }
 }
 ```
 
 ```bash
-composer update recruiter-labs/filament-realtime-driver
+composer update Marcusvbda/filament-realtime-driver
 ```
 
 The service provider is auto-discovered — nothing else to register.
