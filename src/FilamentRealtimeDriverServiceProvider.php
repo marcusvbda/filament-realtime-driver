@@ -34,6 +34,7 @@ class FilamentRealtimeDriverServiceProvider extends ServiceProvider
         }
     }
 
+
     /**
      * Adds Table::socket() as a non-invasive extension (Filament's own Table
      * is already Macroable) instead of a parallel Table implementation.
